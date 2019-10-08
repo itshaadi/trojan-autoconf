@@ -32,12 +32,6 @@ useful documentations:
 ### Installation
 
 ```
-# Install docker and docker-compose
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-
-pip3 install -U docker-compose
-
 git clone https://github.com/itshaadi/trojan-autoconf.git
 cd trojan-autoconf
 chmod +x configure.sh
