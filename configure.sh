@@ -82,10 +82,8 @@ getTLSParams() {
     if [ ! -e "$dataPath/conf/options-ssl-nginx.conf" ] || [ ! -e "$dataPath/conf/ssl-dhparams.pem" ]; then
         info "Downloading recommended TLS parameters ..."
         mkdir -p "$dataPath/conf"
-        curl -s https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/tls_configs/options-ssl-nginx.conf \
-            > "$dataPath/conf/options-ssl-nginx.conf" > /dev/null 2>&1
-        curl -s https://raw.githubusercontent.com/certbot/certbot/master/certbot/ssl-dhparams.pem \
-            > "$dataPath/conf/ssl-dhparams.pem" > /dev/null 2>&1
+        curl -s https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/tls_configs/options-ssl-nginx.conf > "$dataPath/conf/options-ssl-nginx.conf"
+        curl -s https://raw.githubusercontent.com/certbot/certbot/master/certbot/ssl-dhparams.pem > "$dataPath/conf/ssl-dhparams.pem"
     fi
 }
 
