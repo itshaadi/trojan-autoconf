@@ -199,8 +199,6 @@ init() {
     requestCert $domain $email
 
     ${Docker} exec nginx nginx -s reload > /dev/null 2>&1
-
-    ${Sudo} chown -R $USER:$USER $dataPath > /dev/null 2>&1
     
     ok "run the server with: '${Docker} up -d'"    
 }
