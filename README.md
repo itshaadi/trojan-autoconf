@@ -44,6 +44,9 @@ Usage:
  	 <domain> <optional:email> 
  	 eg: ./configure.sh mywebsite.com hello@gmail.com
 ```
+finish the configuration procedure then run `docker-compose up -d`
+
+you only need to run this script once.
 
 ### Defaults:
 * password: `trojan-autoconf`
