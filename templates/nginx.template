@@ -1,3 +1,11 @@
+server {
+    listen 8080;
+    root /etc/nginx/conf.d/www;
+
+    location / {
+        index index.html;
+    }
+}
 
 server {
     listen 80;
@@ -9,7 +17,6 @@ server {
     }
 
     location / {
-         root /etc/nginx/conf.d/www;
-         index index.html;
+        return 301 https://$host$request_uri;
     }
 }

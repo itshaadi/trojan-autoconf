@@ -3,7 +3,7 @@
     "local_addr": "0.0.0.0",
     "local_port": 443,
     "remote_addr": "nginx",
-    "remote_port": 80,
+    "remote_port": 8080,
     "password": [
         "trojan-autoconf"
     ],
