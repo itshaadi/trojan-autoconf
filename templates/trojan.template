@@ -23,7 +23,7 @@
         "session_timeout": 600,
         "plain_http_response": "",
         "curves": "",
-        "dhparam": ""
+        "dhparam": "./certbot/conf/ssl-dhparams.pem"
     },
     "tcp": {
         "prefer_ipv4": true,
